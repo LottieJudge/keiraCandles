@@ -8,14 +8,19 @@ body{
 }
 
 #title {
-  background: linear-gradient(135deg, #ff758c, #f4c2c2);
+  background: linear-gradient(135deg, #Ff69b4, #f4c2c2);
   color: white;
   padding: 20px;
   width: 100vw;
-
+ 
   margin-bottom: 20px;
 }
 
+#title h1{
+  font-weight: 800;
+  font-size: 12vh;
+  text-align: center;
+}
 #blurb p {
   font-size: 1.2rem;
   color: #333;
