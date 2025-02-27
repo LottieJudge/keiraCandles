@@ -1,4 +1,65 @@
-html{
+body{
   margin: 0;
   font-family: 'Futura', sans-serif;
+  background-color: #f8f9fa;
+  text-align: center;
+
+  overflow-x: hidden;
+}
+
+#title {
+  background: linear-gradient(135deg, #ff758c, #f4c2c2);
+  color: white;
+  padding: 20px;
+  width: 100vw;
+
+  margin-bottom: 20px;
+}
+
+#blurb p {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.bento-section {
+  margin-top: 30px;
+}
+
+.bento-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.bento-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bento-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.bento-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bento-item:hover img {
+  transform: scale(1.05);
 }
