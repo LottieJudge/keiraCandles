@@ -34,7 +34,9 @@ body{
 #title .social-icons {
   position: absolute;
   bottom: 10%;
-  right: 30%;
+  right: 5%;
+  display: flex;
+  gap: 15px;
 }
 
 #title .social-icons a {
