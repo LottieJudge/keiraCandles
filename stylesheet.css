@@ -101,7 +101,7 @@ body{
   display: flex;
   justify-content: center;
   padding: 50px;
-  background: linear-gradient(135deg, #e67e22, #d92200);
+  background: linear-gradient(135deg, #d92200, #e67e22 );
   margin-top: 10vh;
 }
 
