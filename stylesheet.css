@@ -1,5 +1,6 @@
+
 body{
-  font-family: "Futura", sans-serif;
+  
   margin: 0;
   background-color: #faf8f6;
   text-align: center;
@@ -8,23 +9,31 @@ body{
 }
 
 #title {
-  background: linear-gradient(135deg, #e67e22, #d92200);
+  background: linear-gradient(135deg, #eac3bf, #b77d77);
   color: white;
   padding: 20px;
   width: 100vw;
-  margin-bottom: 20px;  
+  margin-bottom: 20px; 
   position: relative;
+}
 
+#title .logo {
+  height: 20vh; 
+  width: auto; 
+  /* max-height: 100px;  */
+  margin-left: 4vw;
+  align-self: center;
+  position: absolute;
 }
 
 #title h1{
-  font-weight: 800;
+  font-family: "DynaPuff", serif;
   font-size: 14vh;
   text-align: center;
 
 }
 #title h2{
-  font-weight: 800;
+  font-family: "DynaPuff", serif;
   font-size: 10vh;
   text-align: center;
   margin-top: -3vh;
@@ -49,8 +58,9 @@ body{
 }
 
 #blurb p {
+  font-family: "Playwrite DE Grund", serif;
   font-size: 1.2rem;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
@@ -62,12 +72,12 @@ body{
 } 
 
 .bento-title {
-  font-family: "Oi", serif;
+  font-family: "Playwrite DE Grund", serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #e67e22;
-  font-weight: 800;
+  color: #92a1c3;
+  font-weight: 900;
   margin-right: 3vw;
   letter-spacing: 1px;
 }
@@ -105,7 +115,7 @@ body{
   display: flex;
   justify-content: center;
   padding: 50px;
-  background: linear-gradient(135deg, #d92200, #e67e22 );
+  background: linear-gradient(135deg, #b77d77,#eac3bf );
   margin-top: 10vh;
 }
 
@@ -117,7 +127,7 @@ body{
 }
 
 .contactForm {
-  background-color: #EAC891;
+  background-color: #f2f3f5;
   border-radius: 50px;
   padding: 40px;
   width: 50%;
