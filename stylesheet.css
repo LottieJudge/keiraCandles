@@ -1,8 +1,7 @@
 body{
   font-family: "Futura", sans-serif;
   margin: 0;
-  background-color: #faf8f6
-  ;
+  background-color: #faf8f6;
   text-align: center;
   color:#444444 ;
   overflow-x: hidden;
@@ -63,12 +62,13 @@ body{
 } 
 
 .bento-title {
+  font-family: "Futura", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #e67e22;
+  font-weight: 900;
   font-size: 100%;
-  font-weight: 700;
   letter-spacing: 1px;
 }
 
@@ -78,7 +78,7 @@ body{
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   max-width: 800px;
   margin: 0 auto;
-}
+} 
 
 .bento-item img {
   position: relative;
