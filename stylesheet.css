@@ -62,13 +62,13 @@ body{
 } 
 
 .bento-title {
-  font-family: "Futura", sans-serif;
+  font-family: "Oi", serif;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #e67e22;
-  font-weight: 900;
-  font-size: 100%;
+  font-weight: 800;
+  margin-right: 3vw;
   letter-spacing: 1px;
 }
 
