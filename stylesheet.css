@@ -13,21 +13,27 @@ body{
   color: white;
   padding: 20px;
   width: 100vw;
-  margin-bottom: 20px;  
+  margin-bottom: 20px; 
   position: relative;
+}
 
+#title .logo {
+  height: 20vh; 
+  width: auto; 
+  /* max-height: 100px;  */
+  margin-left: 4vw;
+  align-self: center;
+  position: absolute;
 }
 
 #title h1{
   font-family: "DynaPuff", serif;
-
   font-size: 14vh;
   text-align: center;
 
 }
 #title h2{
   font-family: "DynaPuff", serif;
-
   font-size: 10vh;
   text-align: center;
   margin-top: -3vh;
