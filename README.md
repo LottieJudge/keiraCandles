@@ -8,3 +8,4 @@ To do
 - email form 
 - footer with footer info 
 
+live site -  https://cactusballs.github.io/keiraCandles/
