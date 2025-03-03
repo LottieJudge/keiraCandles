@@ -100,3 +100,106 @@ body{
 .bento-item:hover img {
   transform: scale(1.05);
 }
+
+.contactSection {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #d92200, #e67e22 );
+  margin-top: 10vh;
+}
+
+.contactFormContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.contactForm {
+  background-color: #EAC891;
+  border-radius: 50px;
+  padding: 40px;
+  width: 50%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h2 {
+  font-size: 1.5em;
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+  width: 100%;
+  margin-top: 1em;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contactForm button {
+  margin-top: 1.5em;
+  padding: 12px 20px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.ourContact {
+  padding: 40px;
+  color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ourContact p,
+.ourContact a {
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 3vh;
+}
+
+.ourContact h6{
+  font-size: 1em;
+}
+
+.ourContact a:hover {
+  text-decoration: underline;
+}
+
+#socials {
+  display: flex;
+  gap: 10px; 
+  align-items: center; 
+}
+
+#socials svg {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px; 
+  height: 32px;
+}
+
+
+@media (max-width: 768px) {
+  .contactFormContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .contactForm, 
+  .ourContact {
+    width: 120%;
+    text-align: center;
+  }
+
+  .contactForm {
+    margin-bottom: 20px;
+  }
+}
