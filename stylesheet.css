@@ -1,6 +1,6 @@
 
 body{
-  
+
   margin: 0;
   background-color: #faf8f6;
   text-align: center;
@@ -13,30 +13,34 @@ body{
   color: white;
   padding: 20px;
   width: 100vw;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 #title .logo {
-  height: 20vh; 
-  width: auto; 
-  /* max-height: 100px;  */
-  margin-left: 4vw;
-  align-self: center;
+  height: 15vh;
+  width: auto;
+  max-height: 120px;
   position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
-#title h1{
+#title h1 {
   font-family: "DynaPuff", serif;
-  font-size: 14vh;
-  text-align: center;
-
+  font-size: 12vh;
+  margin: 0;
 }
-#title h2{
+
+#title h2 {
   font-family: "DynaPuff", serif;
-  font-size: 10vh;
-  text-align: center;
-  margin-top: -3vh;
+  font-size: 8vh;
+  margin-top: -2vh;
 }
 
 #title .social-icons {
@@ -54,8 +58,37 @@ body{
 }
 
 #title .social-icons a:hover {
-  color: #333; 
+  color: #333;
 }
+
+
+@media (max-width: 768px) {
+  #title {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #title .logo {
+    height: 8vh;
+    max-height: 60px;
+    top: 5px;
+    left: 5px;
+  }
+
+  #title h1 {
+    font-size: 7vh;
+  }
+
+  #title h2 {
+    font-size: 5vh;
+  }
+
+  #title .social-icons {
+    bottom: 5%;
+    right: 5%;
+  }
+}
+
 
 #blurb p  {
   font-family: "Playwrite DE Grund", serif;
