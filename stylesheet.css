@@ -1,6 +1,5 @@
 
 body{
-
   margin: 0;
   background-color: #faf8f6;
   text-align: center;
@@ -61,7 +60,6 @@ body{
   color: #333;
 }
 
-
 @media (max-width: 768px) {
   #title {
     flex-direction: column;
@@ -89,7 +87,6 @@ body{
   }
 }
 
-
 #blurb p  {
   font-family: "Playwrite DE Grund", serif;
   font-size: 1.2rem;
@@ -104,6 +101,7 @@ body{
   font-weight: bold;
 }
 
+/* gallery */
 .bento-section {
   margin-top: 30px;
   padding: 0 15px;
@@ -250,4 +248,9 @@ body{
   .contactForm {
     margin-bottom: 20px;
   }
+
+  #socials{
+    justify-items: center;
+    align-self: center;
+  } 
 }
