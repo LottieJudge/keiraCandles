@@ -101,6 +101,30 @@ body{
   font-weight: bold;
 }
 
+#about {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+  font-family: "DynaPuff", serif;
+  color: #b77d77;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+#about p {
+  font-family: "Playwrite DE Grund", serif;
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+}
+
 /* gallery */
 .bento-section {
   margin-top: 30px;
