@@ -171,110 +171,158 @@ body{
   transform: scale(1.05);
 }
 
-.contactSection {
+/* contact & about */
+.contactAboutContainer {
   display: flex;
-  justify-content: center;
-  padding: 50px;
-  background: linear-gradient(135deg, #b77d77,#eac3bf );
-  margin-top: 10vh;
+  margin: 5vh auto; 
+  justify-content: center; 
+  align-items: center; 
+  background: linear-gradient(135deg, #eac3bf, #b77d77);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 90%;
+  flex-wrap: wrap;
+  
+}   
+
+.aboutMe {
+  flex: 1;
+  color: white;
+  padding: 20px;
+  font-family: "Playwrite DE Grund", serif;
+  max-width: 50%;
 }
+
+.aboutMe h2 {
+  font-family: "DynaPuff", serif;
+  font-size: 2rem;
+}
+
 
 .contactFormContainer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.contactForm {
-  background-color: #f2f3f5;
-  border-radius: 50px;
-  padding: 40px;
-  width: 50%;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin-top: 5vh;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 45%;
 }
 
 .contactForm h2 {
-  font-size: 1.5em;
+  color: #b77d77;
 }
 
-.contactForm input[type="text"],
-.contactForm input[type="email"],
+.contactForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contactForm input,
 .contactForm textarea {
   width: 100%;
-  margin-top: 1em;
-  padding: 12px;
+  padding: 10px;
+  margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.contactForm button {
-  margin-top: 1.5em;
-  padding: 12px 20px;
-  background-color: #555;
+.contactForm textarea {
+  min-height: 100px;
+}
+
+#submitButton {
+  background: #b77d77;
   color: white;
   border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
   border-radius: 5px;
+  font-size: 1rem;
 }
+
+#submitButton:hover {
+  background: #a56a69;
+}
+
 
 .ourContact {
-  padding: 40px;
-  color: white;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-top: 20px;
 }
 
-.ourContact p,
-.ourContact a {
-  font-size: 1.5em;
-  color: white;
-  margin-bottom: 3vh;
+.ourContact h6 {
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-.ourContact h6{
-  font-size: 1em;
+#socials a {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #b77d77;
 }
 
-.ourContact a:hover {
-  text-decoration: underline;
+#socials a:hover {
+  color: #a56a69;
 }
 
-#socials {
-  display: flex;
-  gap: 10px; 
-  align-items: center; 
-}
-
-#socials svg {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 32px; 
-  height: 32px;
-}
-
-
-@media (max-width: 768px) {
-  .contactFormContainer {
+/* making responsive */
+@media (max-width: 1024px) {
+  .contactAboutContainer {
     flex-direction: column;
     align-items: center;
-  }
-
-
-  .contactForm, 
-  .ourContact {
-    width: 120%;
     text-align: center;
   }
 
-  .contactForm {
-    margin-bottom: 20px;
+  .aboutMe,
+  .contactFormContainer {
+    max-width: 100%;
+    width: 80vw;
   }
 
-  #socials{
-    justify-items: center;
-    align-self: center;
-  } 
+  .aboutMe {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactAboutContainer {
+    padding: 20px;
+    margin-top: 4vh;
+  }
+
+  .aboutMe h2 {
+    font-size: 1.5rem;
+  }
+
+  .contactFormContainer {
+    padding: 15px;
+    width: 80vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactAboutContainer {
+    padding: 15px;
+    margin-top: 4vh;
+  }
+
+  .aboutMe {
+    font-size: 0.9rem;
+  }
+
+  .contactFormContainer {
+    padding: 10px;
+    width: 80vw;
+  }
+
+  #submitButton {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
 }
